@@ -6,9 +6,9 @@ import (
 )
 
 var (
-	queryInsertUser     = "INSERT INTO users (first__name, last_name, email, password) VALUES (?, ?, ?, ?);"
-	queryGetUserByEmail = "SELECT id, first__name, last_name, email, password FROM users WHERE email=?;"
-	queryGetUserByID    = "SELECT id, first__name, last_name, email FROM users WHERE id=?;"
+	queryInsertUser     = "INSERT INTO users (first_name, last_name, email, password) VALUES (?, ?, ?, ?);"
+	queryGetUserByEmail = "SELECT id, first_name, last_name, email, password FROM users WHERE email=?;"
+	queryGetUserByID    = "SELECT id, first_name, last_name, email FROM users WHERE id=?;"
 )
 
 func (user *User) Save() *errors.RestErr {
